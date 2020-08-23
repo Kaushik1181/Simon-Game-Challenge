@@ -1,13 +1,21 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #ececec;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #7a7a7a;
+  display: inline-block;
+  padding: 1rem;
+  border: 8px solid #ececec;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow:
+	  -10px -10px 15px rgba(255,255,255,0.5),
+	   10px 10px 15px rgba(70,70,70,0.12);
 }
 
 .container {
@@ -22,32 +30,57 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  border: 8px solid #ececec;
+  outline: none;
+  border-radius: 50%;
+  box-shadow:
+  -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.btn:focus {
+  box-shadow:
+  -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.btn:active {
+  box-shadow:
+	-10px -10px 15px rgba(255,255,255,0.5),
+	10px 10px 15px rgba(70,70,70,0.12),
+	inset -10px -10px 15px rgba(255,255,255,0.5),
+	inset 10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.red::after {
+  content: "\f011";
+  font-family: FontAwesome;
+  font-size: 70px;
+	color: #ff4c4c;
+}
+
+.green::after {
+  content: "\f011";
+  font-family: FontAwesome;
+  font-size: 70px;
+	color: #4cff4c;
+}
+
+.blue::after {
+  content: "\f011";
+  font-family: FontAwesome;
+  font-size: 70px;
+  color: #4c4cff;
+}
+
+.yellow::after {
+  content: "\f011";
+  font-family: FontAwesome;
+  font-size: 70px;
+	color: #ffff4c;
 }
 
 .game-over {
   background-color: red;
   opacity: 0.8;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
 }
