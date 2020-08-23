@@ -61,7 +61,7 @@ function checkAnswer(currentLevel) {
     }
   } else {
     startOver();
-    $("h1").text("Game Over! Press Any Key to Restart");
+    $("h1").text("Game Over! Touch here to Restart");
     playSound("wrong");
     wrongPress();
   }
