@@ -14,6 +14,14 @@ $(document).keypress(function() {
   }
 });
 
+$("h1").click(function() {
+  if (!started) {
+    $("#level-title").text("level: " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 $(".btn").click(function() {
   if (started) {
     var userChosenColour = $(this).attr("id"); //get id of button pressed
