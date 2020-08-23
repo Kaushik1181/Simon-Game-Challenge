@@ -112,10 +112,6 @@ body {
   .btn:after {
     font-size: 40px;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 @media (max-width:334px) {
@@ -126,10 +122,6 @@ body {
   .btn:after {
     font-size: 32px;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 @media (max-width:294px) {
@@ -139,9 +131,5 @@ body {
   }
   .btn:after {
     font-size: 24px;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
   }
 }
