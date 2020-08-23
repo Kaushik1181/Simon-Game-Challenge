@@ -57,13 +57,13 @@ function checkAnswer(currentLevel) {
     if (userClickedPattern.length === gamePattern.length) {
       setTimeout(function() {
         nextSequence();
-      }, 1000);
+      }, 500);
     }
   } else {
-    startOver();
-    $("h1").text("Game Over! Touch here to Restart");
-    playSound("wrong");
     wrongPress();
+    $("h1").text("Game Over! Your Score: "+ score +" Touch here to Restart");
+    playSound("wrong");
+    startOver();
   }
 }
 
